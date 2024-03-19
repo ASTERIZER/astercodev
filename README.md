@@ -1,2 +1,2 @@
 # CODEV
-Built For Developer By Developers With Love
+Built For Developers
