@@ -16,8 +16,24 @@
 
 
  # Installing Node.js with Next.js
-- Node Version - v18.19.1
-- NPM Version - 10.2.4
+- sudo apt install nodejs
+- sudo apt install npm
+
+
+**To install latest node with NPM in Linux**
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+- source ~/.bashrc
+- nvm install node
+- node -v
+- nvm alias default node   (Optional, to set one from the multiple node version)
+- npm install -g npm@latest
+- npm -v
+
+**Current versions**
+- Node Version - v21.7.1
+- NPM Version - 10.5.0
+
+**To create app and build**
 - To create APP - npx create-next-app codev_web_ui
 - Export and Build - npm run build
   -Export build to custom folder, modify under "scripts" in package.json - "Export"-key
