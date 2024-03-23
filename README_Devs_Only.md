@@ -10,7 +10,7 @@
 
 
 # Installing DJANGO
-- pip install django
+- pip install django **or** apt install python3.11-venv **then** python3 -m venv venv
 - django-admin startproject codev .
 - python manage.py startapp todo
 
@@ -30,8 +30,9 @@
 - npm -v
 
 **Current versions**
-- Node Version - v21.7.1
-- NPM Version - 10.5.0
+- DJANGO - **5.0.3**
+- Node Version - **v21.7.1**
+- NPM Version - **10.5.0**
 
 **To create app and build**
 - To create APP - npx create-next-app codev_web_ui
