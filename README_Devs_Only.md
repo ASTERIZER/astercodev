@@ -43,7 +43,6 @@
 # Git Commands (LINUX)
 **To Clone (as per latest update no HTTPS supported, hence use SSH key approach), create ssh key of your machine**
   - ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-  <Skip pass phrase if not required>
 **Run ssh agent**
   - eval "$(ssh-agent -s)"
 **Add SSH private key to the SSH agent**
