@@ -36,7 +36,7 @@
 
 **To create app and build**
 - To create APP - npx create-next-app codev_web_ui
-- Export and Build - npm run build
+- Export and Build - nvm use 21.7.1<use required version> && sudo npm run build && sudo npm run postbuild (only for linux - ASTERIZER)
   -Export build to custom folder, modify under "scripts" in package.json - "Export"-key
     - also edit "next.config.js"
 
@@ -54,3 +54,10 @@
   - cat ~/.ssh/id_rsa.pub | xclip -selection clipboard 
 **Configure SSH Key in Visual Studio Code**
   - Open Visual Studio Code, go to the Command Palette (Ctrl+Shift+P or Cmd+Shift+P), and type "Git: Clone". Select "Git: Clone" from the list, and when prompted for the repository URL, paste the SSH URL of the repository you want to clone (e.g., git@github.com:username/repository.git). Visual Studio Code should now use your SSH key for authentication when cloning and pushing to Git repositories.
+
+
+# Apache Configuration
+**Create own config file**
+**run command 'sudo ln -s /etc/apache2/sites-available/<custom>.conf /etc/apache2/sites-enabled/'**
+**sudo a2ensite <custom config without extension>** - to activate the custom conf
+**systemctl restart apache2**
